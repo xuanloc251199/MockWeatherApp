@@ -101,4 +101,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="daily_title">Daily title</string>
     <string name="weather">Weather</string>
+    <string name="value_temperature">29℃</string>
+    <string name="detail">Detail</string>
 </resources>

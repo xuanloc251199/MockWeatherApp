@@ -9,16 +9,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
+import androidx.fragment.app.commit
 import androidx.preference.PreferenceManager
-import com.google.android.material.tabs.TabLayoutMediator
-import com.teamdcls.mockweather.adapter.PageViewAdapter
 import com.teamdcls.mockweather.ui.activity.MapActivity
 import com.teamdcls.mockweather.databinding.ActivityMainBinding
 import com.teamdcls.mockweather.ui.activity.CitiesActivity
 import com.teamdcls.mockweather.ui.activity.SettingsActivity
+import com.teamdcls.mockweather.ui.fragment.CurrentFragment
 import com.teamdcls.mockweather.worker.Notification.Companion.showNotification
 
 class MainActivity : AppCompatActivity() {
@@ -33,25 +30,33 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
+
         setSupportActionBar(binding.toolbar)
         supportActionBar?.run {
             setDisplayShowTitleEnabled(false)
             setDisplayHomeAsUpEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_playlist_add_white_24dp)
         }
-        val adapter = PageViewAdapter(this)
-        val page = binding.pageView
-        page.adapter = adapter
-        val tab = binding.tabLayout
-        TabLayoutMediator(tab, page) { _, _ ->
-            run {
+//        val adapter = PageViewAdapter(this)
+//        val page = binding.pageView
+//        page.adapter = adapter
+//        val tab = binding.tabLayout
+//        TabLayoutMediator(tab, page) { _, _ ->
+//            run {
+//
+//            }
+//        }
 
-            }
+        val currentFragment = CurrentFragment()
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            add(R.id.frmContainerView, currentFragment)
         }
+
         channelNotification()
         showNotification()
-        super.onCreate(savedInstanceState)
-        setContentView(binding.root)
     }
 
     private fun changTheme() {

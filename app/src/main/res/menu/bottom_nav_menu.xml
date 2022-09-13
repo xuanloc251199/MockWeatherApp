@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_windy_white_24dp"
+        android:title="@string/title_wind" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_water_white_24dp"
+        android:title="@string/title_rain" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_thermometer_white_24dp"
+        android:title="@string/title_temperature" />
+
+</menu>

@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="actPadding">24dp</dimen>
+    <dimen name="spacingVertical">12dp</dimen>
+    <dimen name="smallSpacingVertical">6dp</dimen>
+    <dimen name="spacingComponentVertical">24dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="miniSize">9sp</dimen>
+    <dimen name="verySmallSize">10dp</dimen>
+    <dimen name="smallSize">11sp</dimen>
+    <!-- Hint, Text Button -->
+    <dimen name="smallMediumSize">12sp</dimen>
+    <dimen name="normalSize">13sp</dimen>
+    <dimen name="normalXSize">14sp</dimen>
+    <!-- Title -->
+    <dimen name="mediumSize">16sp</dimen>
+    <dimen name="mediumXSize">18dp</dimen>
+    <dimen name="largeSize">20sp</dimen>
+    <dimen name="largeMediumSize">30sp</dimen>
+    <dimen name="largeXSize">40sp</dimen>
+    <dimen name="normalLineSpacing">1.5</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="iconWeatherSize">40dp</dimen>
+    <dimen name="spacingIcon">8dp</dimen>
+</resources>

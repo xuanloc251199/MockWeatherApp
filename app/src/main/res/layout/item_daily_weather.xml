@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/smallSpacingVertical"
+    tools:background="@drawable/bg_item_daily"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/spacingVertical"
+            app:cardBackgroundColor="@color/colorBackgroundIconWeather"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacingIcon"
+                android:layout_gravity="center"
+                android:src="@drawable/weather_icon_02d"
+                android:scaleType="fitCenter"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/smallMediumSize"
+                tools:text="@string/weather" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/roboto_light_italic"
+                android:textColor="@color/white"
+                android:textSize="@dimen/verySmallSize"
+                tools:text="@string/weather"
+                tools:ignore="SpUsage" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallMediumSize"
+            android:textAlignment="textEnd"
+            tools:text="@string/weather" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_count"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/roboto_light_italic"
+            android:textColor="@color/white"
+            android:textSize="@dimen/verySmallSize"
+            tools:ignore="SpUsage"
+            tools:text="@string/weather" />
+    </RelativeLayout>
+
+</RelativeLayout>

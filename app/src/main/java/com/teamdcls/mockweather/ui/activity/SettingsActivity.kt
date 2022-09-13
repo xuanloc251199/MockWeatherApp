@@ -16,19 +16,19 @@ import androidx.fragment.app.viewModels
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.teamdcls.mockweather.R
-import com.teamdcls.mockweather.databinding.SettingsActivityBinding
+import com.teamdcls.mockweather.databinding.ActivitySettingsBinding
 import com.teamdcls.mockweather.viewmodel.SettingsVM
 import com.teamdcls.mockweather.worker.Notification.Companion.cancelNotification
 import com.teamdcls.mockweather.worker.Notification.Companion.showNotification
 
 class SettingsActivity : AppCompatActivity() {
 
-    private lateinit var binding: SettingsActivityBinding
+    private lateinit var binding: ActivitySettingsBinding
     private val vm: SettingsVM by viewModels()
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = SettingsActivityBinding.inflate(layoutInflater)
+        binding = ActivitySettingsBinding.inflate(layoutInflater)
 
         if (savedInstanceState == null) {
             supportFragmentManager

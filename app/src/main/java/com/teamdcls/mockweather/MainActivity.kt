@@ -17,7 +17,9 @@ import com.teamdcls.mockweather.ui.activity.CitiesActivity
 import com.teamdcls.mockweather.ui.activity.SettingsActivity
 import com.teamdcls.mockweather.ui.fragment.CurrentFragment
 import com.teamdcls.mockweather.worker.Notification.Companion.showNotification
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var flagRun = false

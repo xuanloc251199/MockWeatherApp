@@ -1,6 +1,6 @@
 package com.teamdcls.mockweather
 
-import com.teamdcls.mockweather.Constant.BASE_URL
+import com.teamdcls.mockweather.Constant.Companion.BASE_URL
 import com.teamdcls.mockweather.interfaces.ApiService
 import dagger.Module
 import dagger.Provides

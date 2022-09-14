@@ -25,16 +25,23 @@
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeather/app/src/main/res/layout/settings_activity.xml" value="0.3625" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeather/app/src/main/res/layout/some_cities.xml" value="0.5" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/clear_day_bg.xml" value="0.2155" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/cycle_image.xml" value="0.2195" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/weather_icon_02d.xml" value="0.2195" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/weather_icon_02n.xml" value="0.2195" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/weather_icon_03d.xml" value="0.2195" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/weather_icon_04n.xml" value="0.2195" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/weather_icon_09d.xml" value="0.2195" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/drawable/weather_icon_10d.xml" value="0.2195" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/activity_add_cities.xml" value="0.3625" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/activity_cities.xml" value="0.3625" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/activity_main.xml" value="0.3528205128205128" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/activity_search_city.xml" value="0.3625" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/fragment_current.xml" value="0.35833333333333334" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/fragment_daily_weather.xml" value="0.3625" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/item_cities.xml" value="0.3625" />
         <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/item_daily_weather.xml" value="0.3625" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/layout/some_cities.xml" value="0.3625" />
+        <entry key="..\:/00.My work/01. FPT/MOCK/project/MockWeatherApp/app/src/main/res/xml/root_preferences.xml" value="0.18541666666666667" />
         <entry key="..\:/AndroidAdvance_FPT/MockWeatherApp/app/src/main/res/layout/activity_add_cities.xml" value="0.11302083333333333" />
         <entry key="..\:/AndroidAdvance_FPT/MockWeatherApp/app/src/main/res/layout/cities_add.xml" value="0.11302083333333333" />
         <entry key="..\:/MockWeather/app/src/main/res/drawable/cycle_image.xml" value="0.1425" />

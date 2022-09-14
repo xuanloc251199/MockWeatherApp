@@ -1,5 +1,6 @@
 package com.teamdcls.mockweather.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -19,9 +20,11 @@ class RecyclerViewSearchCityAdapter :
         }
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun submitData(cities: ArrayList<Cities>) {
         list.clear()
         list = cities
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

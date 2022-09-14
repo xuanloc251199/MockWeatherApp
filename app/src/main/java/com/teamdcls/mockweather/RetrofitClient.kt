@@ -1,7 +1,7 @@
 package com.teamdcls.mockweather
 
 import com.google.gson.GsonBuilder
-import com.teamdcls.mockweather.Constant.BASE_URL
+import com.teamdcls.mockweather.Constant.Companion.BASE_URL
 import com.teamdcls.mockweather.interfaces.ApiService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

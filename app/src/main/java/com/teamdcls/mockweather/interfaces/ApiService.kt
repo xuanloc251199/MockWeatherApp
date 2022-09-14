@@ -1,8 +1,8 @@
 package com.teamdcls.mockweather.interfaces
 
-import com.teamdcls.mockweather.Constant.API_KEY
-import com.teamdcls.mockweather.Constant.FORECASTS
-import com.teamdcls.mockweather.Constant.LOCATION_KEY
+import com.teamdcls.mockweather.Constant.Companion.API_KEY
+import com.teamdcls.mockweather.Constant.Companion.FORECASTS
+import com.teamdcls.mockweather.Constant.Companion.LOCATION_KEY
 import com.teamdcls.mockweather.model.current.CurrentWeather
 import retrofit2.Response
 import retrofit2.http.GET

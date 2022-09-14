@@ -22,8 +22,8 @@ class Notification {
 
         fun Context.createNotification() = NotificationCompat.Builder(this, "current_weather")
             .setSmallIcon(R.drawable.ic_detail_pcpn)
-            .setContentTitle("Tea Manage")
-            .setContentText("Are you user tea today?")
+            .setContentTitle("Weather")
+            .setContentText("Current Weather")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setStyle(NotificationCompat.BigTextStyle().bigText(text))
             .setContentIntent(

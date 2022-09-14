@@ -29,12 +29,13 @@ class RainMapFragment : Fragment() {
         binding.rainMap.run {
             settings.run {
                 javaScriptEnabled = true
-                loadWithOverviewMode=true
-                useWideViewPort=true
+                loadWithOverviewMode = true
+                useWideViewPort = true
             }
-            loadUrl( "file:///android_asset/map.html?lat=30}&lon=-20&k=2.0&appid=${getString(R.string.app_id)}")
+            loadUrl("https://www.windy.com/-Rain-thunder-rain?rain,16.564,107.408,9")
+            //loadUrl("file:///android_asset/rain_map.html?lat=30}&lon=-20&k=2.0&appid=${getString(R.string.app_id)}")
             setInitialScale(1)
-            webViewClient=object :WebViewClient(){
+            webViewClient = object : WebViewClient() {
                 override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                     view?.loadUrl(url!!)
                     return true

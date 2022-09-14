@@ -1,5 +1,6 @@
 package com.teamdcls.mockweather.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -15,6 +16,11 @@ class CitiesActivity : AppCompatActivity() {
         supportActionBar?.run {
             setDisplayHomeAsUpEnabled(true)
             title = "Cities"
+        }
+
+        binding.btnAddCities.setOnClickListener {
+            val intent = Intent(this,AddCitiesActivity::class.java)
+            startActivity(intent)
         }
     }
 

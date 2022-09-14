@@ -4,7 +4,7 @@
 //import androidx.room.Insert
 //import androidx.room.OnConflictStrategy
 //import androidx.room.Update
-//import com.teamdcls.mockweather.model.CurrentWeather
+//import com.teamdcls.mockweather.model.current.CurrentWeather
 //
 //@Dao
 //interface CurrentWeatherDao {

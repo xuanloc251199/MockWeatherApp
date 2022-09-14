@@ -1,47 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:padding="24dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
-        android:id="@+id/btn_my_loction"
+    <data>
+
+        <variable
+            name="city"
+            type="com.teamdcls.mockweather.model.Cities" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cities"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:drawableLeft="@drawable/ic_baseline_add_location"
-        android:text="My location"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/largeSize"
-        app:backgroundTint="@color/colorMaterialBlue500"
-        app:cornerRadius="5dp"
-        app:iconGravity="textStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
 
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_my_loction">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_button"
-            android:text="Ha Noi"
-            android:textAllCaps="false"
-            android:textColor="#5A5959"
-            android:textSize="@dimen/mediumSize" />
-    </com.google.android.material.chip.ChipGroup>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/img_cities"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cycle_image"
+                android:padding="8dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingClass" />
+
+            <LinearLayout
+                android:id="@+id/ln"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/add_to_db"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_cities"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_cities_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{city.englishName+@string/character_connect+city.country.englishName}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mediumXSize" />
+
+                <TextView
+                    android:id="@+id/txt_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@{@string/region+city.region.englishName}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mediumSize" />
+
+                <TextView
+                    android:id="@+id/txt_time_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@{city.timeZone.name}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalSize" />
+
+                <TextView
+                    android:id="@+id/txt_geo_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@{@string/lat+city.geoPosition.latitude+@string/character_connect+@string/lon+city.geoPosition.longitude}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalSize" />
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_to_db"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="#308DDF"
+                android:clickable="true"
+                app:fabCustomSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_white_24dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

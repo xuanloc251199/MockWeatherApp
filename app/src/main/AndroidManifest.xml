@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.teamdcls.mockweather">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MyApplication"
@@ -17,18 +18,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.AddCitiesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.CitiesActivity"
             android:exported="false" />
         <activity
-            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".ui.activity.SettingsActivity"
             android:exported="false"
-            android:label="@string/title_activity_settings" />
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:name=".ui.activity.MapActivity"
             android:exported="false"
-            android:label="@string/title_activity_map" />
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
